@@ -23,7 +23,7 @@ $(document).ready(function() {
         var newPizza = new Pizza(size, toppings, quantity);
         var totalPrice = newPizza.pizzaPrice();
 
-       $("#price").text(totalPrice);
+       $("#price").text(newPizza.pizzaPrice());
        $("#result").show();
        
        event.preventDefault();
