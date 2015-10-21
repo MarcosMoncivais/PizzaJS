@@ -17,7 +17,8 @@ Pizza.prototype.price = function(){
 };
 
 $(document).ready(function() {
-    $("form#order").submit(function(event) {
+    $("#order").submit(function(event) {
+        alert('hi');
         event.preventDefault();
         var size = $("input#size").val();
         var toppings = $("input#toppings").val();
